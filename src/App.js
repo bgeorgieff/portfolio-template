@@ -1,7 +1,11 @@
 import './App.scss'
 import { NavBar } from './Components/NavBar'
 import Particles from 'react-particles-js'
-import { Home } from './Pages/Home';
+import { Home } from './Pages/Home'
+import { Switch, Route } from 'react-router-dom'
+import { About } from './Pages/About'
+import { Projects } from './Pages/Projects'
+import { Contact } from './Pages/Contact'
 
 function App() {
   return (
@@ -29,7 +33,20 @@ function App() {
       </div>
       <div className='main-content'>      
         <div className='content'>
-          <Home />
+          <Switch>
+            <Route path='/' exact>
+              <Home />
+            </Route>
+            <Route path='/about' exact>
+              <About />
+            </Route>
+            <Route path='/projects' exact>
+              <Projects />
+            </Route>
+            <Route path='/contact' exact>
+              <Contact />
+            </Route>
+          </Switch>
         </div>
       </div>
     </div>

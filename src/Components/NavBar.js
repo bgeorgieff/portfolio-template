@@ -1,5 +1,7 @@
 import avatar from '../img/1626854735796.png'
 import { NavLink } from 'react-router-dom'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const NavBar = () => {
   return (
@@ -21,15 +23,12 @@ export const NavBar = () => {
             <NavLink to='/projects' exact activeClassName='active'>Projects</NavLink>
           </li>
           <li className='nav-item'>
-            <NavLink to='/blog' exact activeClassName='active'>Blog</NavLink>
-          </li>
-          <li className='nav-item'>
-            <NavLink to='/contact' exact activeClassName='active'>Conact</NavLink>
+            <NavLink to='/contact' exact activeClassName='active'>Contact</NavLink>
           </li>
         </ul>
         <footer className='footer'>
           <p>
-            Created with love by Blagovest Georgiev
+            Created with <FontAwesomeIcon icon={faHeart} style={{color: 'red'}} /><br/> by Blagovest Georgiev
             <br/>
             2021 
           </p>
