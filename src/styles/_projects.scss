@@ -1,7 +1,15 @@
 .projects-container {
   margin: 5rem 15rem;
+  @media screen and (max-width: 1400px) {
+    margin: 0;
+    padding: 1rem 0 0 0;
+  }
   .projects-list {
     margin: 3rem 0;
+    @media screen and (max-width: 1400px) {
+      margin: 0;
+      padding: 1rem 0 0 0;
+    }
   }
 }
 
@@ -12,6 +20,9 @@
   grid-gap: 1rem;
   grid-column-gap: 4rem;
   grid-row-gap: 4rem;
+  @media screen and (max-width: 1400px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .project {
     .project-item {
       text-align: left;

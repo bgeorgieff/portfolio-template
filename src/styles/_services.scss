@@ -1,5 +1,9 @@
 .services-container {
   margin: 3rem 0;
+  @media screen and (max-width: 1400px) {
+    margin: 0;
+    padding: 1rem 0;
+  }
 }
 
 .services-list {
@@ -27,6 +31,9 @@
     border-bottom: 1px solid #45CB85;
     border-top: 8px solid #45CB85;
     transition: all 0.4s ease-in-out;
+    @media screen and (max-width: 1400px) {
+      height: 20rem;
+    }
     &:hover {
       border-top: 8px solid #57E2E5;
     }
@@ -34,7 +41,6 @@
       font-size: 1.5rem;
       position: relative;
       text-align: left;
-      // margin-bottom: 1rem;
       padding: 0.6rem 0;
       &::before {
         content: '';

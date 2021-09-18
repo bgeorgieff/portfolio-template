@@ -9,9 +9,17 @@
   display: flex;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  @media screen and (max-width: 1400px) {
+    display: block;
+  }
   img {
     width: 100%;
-    object-fit: cover;
+    display: block;
+    @media screen and (max-width: 1400px) {
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   h4 {
     font-size: 2rem;
