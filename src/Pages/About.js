@@ -2,7 +2,8 @@ import { Images } from "../Components/Images"
 import { Services } from "../Components/Services"
 import { Skills } from "../Components/Skills"
 import { Title } from "../Components/Title"
-import image from '../img/email.svg'
+import email from '../img/email.svg'
+import reactImg from '../img/science-symbol.svg'
 
 export const About = () => {
   return (
@@ -25,9 +26,9 @@ export const About = () => {
       <div className='services-container'>
         <Title titleText={'Services'} span={'Services'} />
         <div className='services-list'>
-          <Services image={image} serviceName={'Email Templating'} 
+          <Services image={email} serviceName={'Email Templating'} 
             serviceText={'Professional, fast and reliable creation of custom email templates'} />
-          <Services image={image} serviceName={'SPA'} 
+          <Services image={reactImg} serviceName={'SPA'} 
             serviceText={'In need of Portfolio website or simply a place to put out your thoughts? Let me help!'} />
         </div>
       </div>

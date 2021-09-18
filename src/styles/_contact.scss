@@ -1,0 +1,59 @@
+.contact-container {
+  margin: 5rem 15rem;
+  h6 {
+    font-size: 1.2rem;
+  }
+  .contact-section {
+    width: 80%;
+  }
+}
+
+.contact-prop {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 2rem;
+  border: 1px solid white;
+  &:hover {
+    background-color: #0A1045;
+    transition: all 0.4s ease-in-out;
+    img {
+      transform: scale(1.2);
+      transition: all 0.4s ease-in-out;
+    }
+    h6, p {
+      transform: scale(1.1);
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    .contact-image-container {
+      height: 6rem;
+      width: 6rem;
+      text-align: center;
+      img {
+        width: 95px;
+        padding: 1rem;
+      }
+    }
+    .contact-items {
+      margin-left: 2rem;
+      a {
+        text-decoration: none;
+        font-style: inherit;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.contact-page {
+  display: block;
+}
+
+.map-section {
+  width: 60%;
+  padding: 2rem;
+}

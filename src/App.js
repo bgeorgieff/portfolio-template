@@ -5,7 +5,7 @@ import { Home } from './Pages/Home'
 import { Switch, Route } from 'react-router-dom'
 import { About } from './Pages/About'
 import { Projects } from './Pages/Projects'
-import { Contact } from './Pages/Contact'
+import { ContactPage } from './Pages/Contact'
 
 function App() {
   return (
@@ -44,7 +44,7 @@ function App() {
               <Projects />
             </Route>
             <Route path='/contact' exact>
-              <Contact />
+              <ContactPage />
             </Route>
           </Switch>
         </div>
