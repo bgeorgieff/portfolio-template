@@ -11,6 +11,9 @@
       span {
         color: #153131;
       }
+      @media screen and (max-width: 1000px) {
+        font-size: 2rem;
+      }
     } 
   }
   .icons {
@@ -38,5 +41,11 @@
         }
       }
     }
+  }
+  @media screen and (max-width: 1000px) {
+    display: block;
+    position: relative;
+    min-width: 100%;
+    transform: translate(-50%, 55%);
   }
 }
