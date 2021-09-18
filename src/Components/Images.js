@@ -9,7 +9,11 @@ export const Images = () => {
       <div className='about-info'>
         <h4>I am<span>some text</span></h4>
         <p className='about-info-text'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        Having started my professional journey about 10 years ago, I have been working as a digital marketing specialist up until recently. 
+        My primary tasks required me to create and optimize automated email campaigns for a number of markets around the globe including Australia, the UK, and the USA. 
+        In the process I gained extensive knowledge of the specifics of HTML and CSS, as those were two of the main tools I relied on when crafting my email templates. 
+        Having scratched just the surface of the infinite possibilities offered by web development, my curiosity towards technology and the digital inspired me to make a bold career shift. 
+        I’m passionate about JavaScript …
         </p>
         <div className='details-container'>
           <div className='left-section'>

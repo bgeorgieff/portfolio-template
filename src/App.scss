@@ -6,6 +6,7 @@
 @import './styles/skillSection';
 @import './styles/services';
 @import './styles/contact';
+@import './styles/projects';
 
 * {
   margin: 0;
@@ -31,9 +32,19 @@ body {
   color: #fff;
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.2rem;
+  // position: relative;
+}
+
+#root {
   position: relative;
 }
 
 span {
   color: #153131;
+}
+
+@media screen and (max-width: 411px) {
+  html {
+    font-size: 70%;
+  }
 }
