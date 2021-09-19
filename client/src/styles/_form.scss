@@ -1,0 +1,54 @@
+.form-container {
+  margin: 5rem 0;
+  @media screen and (max-width: 1400px) {
+    margin: 0;
+  }
+}
+
+.email-form {
+  width: 90%;
+  background-color: #15313170;
+  margin: 0 auto;
+  padding: 1rem;
+  .form-header {
+    margin: 1rem 0 3rem  0;
+    position: relative;
+  }
+  .form-item {
+    label {
+      display: block;
+    }
+
+    input, textarea {
+      width: 100%;
+      box-shadow: 1px 1px 4px 1px #0a10459a;
+      background-color: white;
+      &:focus {
+        background-color: #6A7FDB;
+      }
+      :not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .email-submit {
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0;
+    .submit-btn {
+      padding: .4rem 1.5rem;
+      border-radius: 8px;
+      font: inherit;
+      letter-spacing: 2px;
+      transition: all .4s ease-in-out;
+      border: 1px solid #0A1045;
+      box-shadow: 1px 1px 4px 1px #0a10459a;
+      &:hover {
+        background-color: #0A1045;
+        color: white;
+      
+      }
+    }
+  }
+
+}
