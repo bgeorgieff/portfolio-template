@@ -86,11 +86,11 @@ export const ContactForm = () => {
         <p>Or Message me via this form</p>
       </div>
       { failedNameVerification ? 
-        <div style={{position: 'absolute', top:'65%', left: '23%', color: 'red'}}>Please fill in your name</div> : null }
+        <div className='error-message'>Please fill in your name</div> : null }
       { failedEmailVerification ? 
-        <div style={{position: 'absolute', top:'65%', left: '23%', color: 'red'}}>Wrong email format</div> : null }
+        <div className='error-message'>Wrong email format</div> : null }
       { failedMSGVerification ? 
-        <div style={{position: 'absolute', top:'65%', left: '23%', color: 'red'}}>Please fill in your message</div> : null }
+        <div className='error-message'>Please fill in your message</div> : null }
       <form onSubmit={handleSubmit}>
         <div className='form-item'>
           <label htmlFor='Name'>Name</label>

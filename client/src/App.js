@@ -1,4 +1,5 @@
 import './App.scss'
+import { useState, useRef } from 'react'
 import { NavBar } from './Components/NavBar'
 import Particles from 'react-particles-js'
 import { Home } from './Pages/Home'
@@ -6,14 +7,17 @@ import { Switch, Route } from 'react-router-dom'
 import { About } from './Pages/About'
 import { Projects } from './Pages/Projects'
 import { ContactPage } from './Pages/Contact'
-import { useState } from 'react'
+import { HamburgerController } from './utils/hamburgerController'
 
 function App() {
   const [navToggle, setNavToggle] = useState(false)
+  const handler = useRef()
 
   const navClick = () => {
     setNavToggle(!navToggle)
   }
+
+  HamburgerController(handler, () => setNavToggle(false))
 
   return (
     <div className="App">
@@ -40,7 +44,7 @@ function App() {
       </div>
 
       <div className='main-content'>  
-        <div className='nav-btn' onClick={navClick}>
+        <div ref={handler} className='nav-btn' onClick={navClick}>
           <div className='lines-1'></div>
           <div className='lines-2'></div>
           <div className='lines-3'></div>

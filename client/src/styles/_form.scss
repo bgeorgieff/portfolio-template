@@ -1,5 +1,6 @@
 .form-container {
   margin: 5rem 0;
+  padding: 3rem 0;
   @media screen and (max-width: 1400px) {
     margin: 0;
   }
@@ -23,11 +24,9 @@
       width: 100%;
       box-shadow: 1px 1px 4px 1px #0a10459a;
       background-color: white;
+      margin-bottom: 1rem;
       &:focus {
         background-color: #6A7FDB;
-      }
-      :not(:last-child) {
-        margin-bottom: 2rem;
       }
     }
   }
@@ -50,5 +49,14 @@
       }
     }
   }
-
+  .error-message {
+    position: absolute;
+    top: 65%;
+    left: 23%;
+    color: red; 
+    @media screen and (max-width: 1400px) {
+      top: 63%;
+      left: 8%;
+    }
+  }
 }
