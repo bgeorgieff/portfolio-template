@@ -2,7 +2,7 @@
 
 This is a porfolio template made with ReactJS and Email API created with ExpressJS
 
-##Client folder
+## Client folder
 
 
-##Email API folder
+## Email API folder
